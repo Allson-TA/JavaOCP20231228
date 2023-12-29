@@ -1,4 +1,6 @@
-package dey01;import java.util.Arrays;
+package day01;
+
+import java.util.Arrays;
 
 public class ArrayDemo1 {
 
@@ -22,6 +24,16 @@ public class ArrayDemo1 {
 		}
 		
 		System.out.println(Arrays.toString(cars));
+		
+		String[] copiedCars = new String[cars.length];
+	
+		//System.arraycopy(cars, 0, copiedCars, 0, cars.length);
+		//System.out.println(Arrays.toString(copiedCars));
+		
+		System.arraycopy(cars, 0, copiedCars, 2, 2);
+		System.out.println(Arrays.toString(copiedCars));
+		
+		
 	}
 
 }
